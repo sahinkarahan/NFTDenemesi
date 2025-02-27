@@ -2,20 +2,14 @@
 //  ContentView.swift
 //  NFTDenemesi
 //
-//  Created by Şahin Karahan on 19.02.2025.
+//  Created by Şahin Karahan on 20.02.2025.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 

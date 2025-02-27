@@ -6,6 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		20B6B62F2D67463B00DCFDA5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 20B6B62E2D67463B00DCFDA5 /* Alamofire */; };
+		20B6B6342D67466000DCFDA5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 20B6B6332D67466000DCFDA5 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20B6B6622D6748FE00DCFDA5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		20B6B55B2D66057900DCFDA5 /* NFTDenemesi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NFTDenemesi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B6B6342D67466000DCFDA5 /* Kingfisher in Frameworks */,
+				20B6B62F2D67463B00DCFDA5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +75,7 @@
 				20B6B5572D66057900DCFDA5 /* Sources */,
 				20B6B5582D66057900DCFDA5 /* Frameworks */,
 				20B6B5592D66057900DCFDA5 /* Resources */,
+				20B6B6622D6748FE00DCFDA5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -65,6 +86,8 @@
 			);
 			name = NFTDenemesi;
 			packageProductDependencies = (
+				20B6B62E2D67463B00DCFDA5 /* Alamofire */,
+				20B6B6332D67466000DCFDA5 /* Kingfisher */,
 			);
 			productName = NFTDenemesi;
 			productReference = 20B6B55B2D66057900DCFDA5 /* NFTDenemesi.app */;
@@ -94,6 +117,10 @@
 			);
 			mainGroup = 20B6B5522D66057900DCFDA5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				20B6B62D2D67463B00DCFDA5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				20B6B6322D67466000DCFDA5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 20B6B55C2D66057900DCFDA5 /* Products */;
 			projectDirPath = "";
@@ -322,6 +349,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20B6B62D2D67463B00DCFDA5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		20B6B6322D67466000DCFDA5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20B6B62E2D67463B00DCFDA5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20B6B62D2D67463B00DCFDA5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		20B6B6332D67466000DCFDA5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20B6B6322D67466000DCFDA5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 20B6B5532D66057900DCFDA5 /* Project object */;
 }
